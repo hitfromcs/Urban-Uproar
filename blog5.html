@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Blog5</title>
+    <style>
+        header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #242528;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #ffef00;
+    font-size: 20px;
+    height: 90px;
+}
+
+header li,a{
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    line-height: 90px;
+}
+
+.nav_links{
+list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a:hover{
+    color: #ffff00;
+}
+        .header{
+            width: 100%;
+            height: 260%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .logo{
+            position: absolute;
+            top: -38px;
+            left: -10px;
+        }
+        .nobullets li{
+            list-style-type: none;
+            display: inline;
+            padding: 20px 70px;
+        }
+        .nobullets{
+            position: absolute;
+            top: 43px;
+            left: 25%;
+        }
+        #urban{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffff00;
+}
+        .blog5{
+            width: 90%;
+            height: 1550px;
+            position:absolute;
+            left: 63px;
+            top: 100px;
+            background-color: white;
+        }
+        #pic{
+            position: absolute;
+            top: 0px;
+        }
+        #heading{
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            color: white;
+            font-size: 50px;
+            width: 600px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #author{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: underline;
+        }
+        #para{
+            position: absolute;
+            top:390px;
+            left: 20px;
+            font-size: 18px;
+            text-align: justify;
+            width: 96%;
+        }
+        .block{
+            position: absolute;
+            top: 610px;
+            left: 80px;
+            background-color: rgb(184, 180, 180);
+            border: solid 1px black;
+            width: 230px;
+            height: 120px;
+        }
+        #content{
+            position: absolute;
+            top: -15px;
+            left: 43px;
+        }
+        #list{
+            position: absolute;
+            top: 14px;
+            font-size: 17px;
+            left: -10px;
+            color: rgb(14, 14, 56);
+        }
+        #h2_1{
+            position: absolute;
+            top: 730px;
+            left: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(102, 102, 102);
+        }
+        #h4_1{
+            position: absolute;
+            top: 770px;
+            left: 50px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(146, 146, 146);
+        }
+        #p_1{
+            position: absolute;
+            top: 799px;
+            left: 50px;
+            font-size: 17px;
+            text-align: justify;
+            width: 90%;
+        }
+        #h2_2{
+            position: absolute;
+            top: 990px;
+            left: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(102, 102, 102);
+        }
+        #h4_2{
+            position: absolute;
+            top: 1030px;
+            left: 50px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(146, 146, 146);
+        }
+        #p_2{
+            position: absolute;
+            top: 1060px;
+            left: 50px;
+            font-size: 17px;
+            text-align: justify;
+            width: 90%;
+        }
+        #h2_3{
+            position: absolute;
+            top: 1340px;
+            left: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(102, 102, 102);
+        }
+        #h4_3{
+            position: absolute;
+            top: 1380px;
+            left: 50px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(146, 146, 146);
+        }
+        #p_3{
+            position: absolute;
+            top: 1415px;
+            left: 50px;
+            font-size: 17px;
+            text-align: justify;
+            width: 90%;
+        }
+        .border{
+            position: absolute;
+            bottom: 32px;
+            width: 100%;
+            left: 0px;
+            background-color: white;
+            border-bottom: solid 2px black;
+        }
+        #date{
+            position: absolute;
+            bottom: -40px;
+            right: 18px;
+            color: rgb(107, 107, 107);
+        }
+        #auth{
+            position: absolute;
+            bottom: -40px;
+            left: 18px;
+            color: rgb(107, 107, 107);
+        }
+
+.footercontainer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    position: absolute;
+    bottom:-1200px;
+    width: 100%;
+    height: 160px;
+    left: 0px;
+
+}
+.item1{
+    text-align: center;
+    color: #ffff00;
+    flex-shrink: 0;
+    align-self: flex-start;
+    font-family: 'Kalnia', serif;
+    font-size: 24px;
+    left: 30px;
+    position: absolute;
+    top: -2px;
+}
+.footerimage{
+
+    position: absolute;
+    top: 30px;
+    left: 50px;
+
+}
+.item3{
+    
+    font-size: 24px;
+    font-family: 'Oswald', 'Poppins', sans-serif;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+}
+.social_links{
+    position: absolute;
+    top: 70px;
+    padding: 3px;
+    right: 20px;
+
+}
+
+ul{
+    list-style: none;
+    color: #000000;
+}
+
+.footercontainer{
+    margin-top: 15px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.item1{
+    text-align: center;
+    color: #ffff00;
+    flex-shrink: 0;
+    align-self: flex-start;
+    font-family: 'Kalnia', serif;
+    font-size: 55px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item2{
+    font-size: 35px;
+    font-family: 'Oswald', 'Poppins', sans-serif; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 140px;
+}
+
+.item3{
+    font-size: 35px;
+    font-family: 'Oswald', 'Poppins', sans-serif; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+i{
+    font-size: 35px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footerimage{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    bottom: 90px;
+}
+
+footer a{
+    color:#ffff00;
+    text-decoration: none;
+    font-family: 'Oswald', 'Poppins', sans-serif;
+    font-size: 35px;
+    line-height: 0px;
+}
+
+footer a:hover{
+    color: white;
+}
+
+
+    </style>
+</head>
+<body link="green" alink="blue" vlink="yellow">
+    <header>
+        <img src="UrbanUproar_Logo.png" alt="logo" width="200px" height="200px"> <span style="position: absolute; left: 350px;"> Urban Uproar </span>
+        <nav>
+        <div class="nav_links">
+            <ul>
+                <li #> <a href="newsletter.php"> Home </a></li>
+                <li> <a href="blogs.html"> Blogs </a></li>
+                <li> <a href="aboutus1.html"> About Us </a></li>
+
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+        <div class="blog5">
+            <img id="pic" src="blog5.jpg" alt="png" width="100%" height="400px">
+            <h2 id="heading"><b>24 Requests To International Travelers & Pakistani Tourists</b></h2>
+            <h2 id="author"><b>Aimen Ayub</b></h2>
+            <p id="para"><i>Every year, the local population of tourist regions of Pakistan discusses and analyzes the different impacts (negative and positive) caused by the recent boom in tourism. Although people of these mountain regions are grateful for the economic benefits, they also have many genuine concerns, one of them being not heard.
+                <br><br>
+                Pakistan Travel Blog has talked to stakeholders including local business owners and the civil society members of Gilgit-Baltistan and Azad Kashmir to identify the core issues.
+                <br><br>
+                In order to simplify their major concerns, Pakistan Travel Blog has made a list of practices for “the respectful tourist” who wants to visit the mountain areas or is a frequent
+                visitor of Gilgit-Baltistan or Azad Kashmir.
+                </i></p>
+
+
+                <div class="block">
+                    <h3 id="content"><b>Table of Contents</b></h3>
+                    <ol id="list" type="1">
+                        <li>Cultural Considerations</li>
+                        <li>Environmental Considerations</li>
+                        <li>Other Considerations</li>
+                    </ol>
+                </div>
+
+
+                <h2 id="h2_1"><b>1. Cultural Considerations</b></h2>
+                <h4 id="h4_1"><b>THE RESPECTFUL TOURIST:</b></h4>
+                <p id="p_1">1. is humble and grateful when accepting offers of local food while not taking advantage of generous hospitality, and pays for food and accommodation
+                    <br>
+                    2. behaves conservatively as a show of respect for the local culture
+                    <br>
+                    3. wears loose, long-sleeved, unrevealing shirts, and full-length pants that cover the ankles in religious buildings/areas.
+                    <br>
+                    4. doesn’t drink alcohol in public view
+                    <br>
+                    5. refrains from all public displays of affection
+                    <br>
+                    6. contributes to the local economy by supporting local businesses, hiring porters and buying local products, which encourages local people to conserve their natural resource base
+                    <br>
+                    7. asks permission before photographing people or sacred places
+                    <br>
+                    8. makes donations through established organizations or respected community leaders, and doesn’t give handouts to children</p>
+            
+            
+            <h2 id="h2_2">2. Environmental Considerations</h2>    
+            <h4 id="h4_2">THE RESPECTFUL TOURIST:</h4> 
+            <p id="p_2">1. lessens the negative impact on the environment
+                <br>
+                2. travels in a small party to minimize overall impact but avoids traveling alone
+                <br>
+                4. cooks on a kerosene stove avoiding wood or dung fires while camping since these fuels are a scarce resource that belongs to the local people
+                <br>
+                5. brings adequate warm clothing to avoid relying on campfires for warmth
+                <br>
+                6. bathes, washes dishes and clothes with a basin and discards soapy water at least 50m from water sources
+                <br>
+                7. relieves one’s self at least 50m from open water sources or campsites where toilets don’t exist
+                <br>
+                8. burns rubbish that can be burnt and packs out other rubbish
+                <br>
+                9. leaves campsites the same way they were on arrival; doesn’t clear vegetation, cut trees, limbs or branches, and doesn’t move rocks from walls or canals
+                <br>
+                10. doesn’t write names or mark graffiti on rocks
+                <br>
+                11. doesn’t hunt or trade in endangered species
+                <br>
+                12. refrains from harassing or feeding wildlife or eating wild game
+                <br>
+                13. doesn’t discriminate with tour operators who commit to environmentally responsible tourism (examples: Apricot Tours, Jangoo Adventures, etc.)
+                <br>
+                14. books through a local tour operator if or when traveling with a tour operator.</p>
+
+
+                <h2 id="h2_3">3. Other Considerations</h2>
+                <h4 id="h4_3">THE RESPECTFUL TOURIST:</h4>
+                <p id="p_3">1. is law-abiding and obtains necessary permission(s) for the route
+                    <br>
+                    2. respects the sovereignty of international borders and obtains all required permission for cross-border routes
+                    <br>
+                    3. takes responsibility for one’s actions and avoids foolhardy decisions</p>
+
+
+                    <div class="border">
+                        <p id="date"><b>June 07, 2023</b></p>
+                        <p id="auth"><b>Aimen Ayub</b></p>
+                    </div>
+                </div>
+
+</body>
+</html>

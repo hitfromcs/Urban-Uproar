@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Blog3</title>
+    <style>
+        header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #242528;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #ffef00;
+    font-size: 20px;
+    height: 90px;
+}
+
+header li,a{
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    line-height: 90px;
+}
+
+.nav_links{
+list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a:hover{
+    color: #ffff00;
+}
+        .header{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .logo{
+            position: absolute;
+            top: -38px;
+            left: -10px;
+        }
+        .nobullets li{
+            list-style-type: none;
+            display: inline;
+            padding: 20px 70px;
+        }
+        .nobullets{
+            position: absolute;
+            top: 43px;
+            left: 25%;
+        }
+
+        #urban{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffff00;
+}
+        .blog3{
+            width: 90%;
+            height: 82%;
+            position:absolute;
+            left: 63px;
+            top: 100px;
+            background-color: white;
+        }
+        #pic{
+            position: absolute;
+            top: 35px;
+            left: 155px;
+            border: solid 1.5px black;
+        }
+        #heading{
+            position: absolute;
+            top: 50px;
+            left: 44%;
+            width: 610px;
+            text-transform: capitalize;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 28px;
+            color: black;
+        }
+        #para1{
+            position: absolute;
+            top: 160px;
+            left: 44%;
+            width: 600px;
+            color: rgb(185, 49, 49);
+            font-size: 23px;
+            border-bottom: solid 1px black;
+        }
+        #name{
+            position: absolute;
+            left: 44%;
+            top: 20px;
+            color: rgb(71, 202, 71);
+        }
+        #red{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 10px;
+            height: 60px;
+            background-color: red;
+        }
+        #green{
+            position: absolute;
+            right: 0px;
+            top: 120px;
+            width: 10px;
+            height: 65px;
+            background-color: green;
+        }
+        #paragraph{
+            position: absolute;
+            bottom: 220px;
+            font-size: 17px;
+            left: 30px;
+            width: 90%;
+            border-bottom: solid 1px black ;
+        }
+        #date2{
+            position: absolute;
+            bottom: 0px;
+            right: 92px;
+            font-size: 16px;
+            color: rgb(78, 221, 42);
+        }
+        #author2{
+            position: absolute;
+            bottom: 0px;
+            left: 30px;
+            font-size: 16px;
+            color: rgb(78, 221, 42);
+        }
+        #freeblock{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            background-color: rgb(134, 81, 81);
+            width: 38px;
+            height: 38px;
+            text-align: center;
+        }
+        .footercontainer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    position: absolute;
+    bottom:-154px;
+    width: 100%;
+    height: 160px;
+    left: 0px;
+
+}
+.item1{
+    text-align: center;
+    color: #ffff00;
+    flex-shrink: 0;
+    align-self: flex-start;
+    font-family: 'Kalnia', serif;
+    font-size: 24px;
+    left: 30px;
+    position: absolute;
+    top: -2px;
+}
+.footerimage{
+
+    position: absolute;
+    top: 30px;
+    left: 50px;
+
+}
+.item3{
+    
+    font-size: 24px;
+    font-family: 'Oswald', 'Poppins', sans-serif;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+}
+.social_links{
+    position: absolute;
+    top: 70px;
+    padding: 3px;
+    right: 20px;
+
+}
+
+
+    </style>
+</head>
+<body link="green" alink="blue" vlink="yellow">
+    <header>
+        <img src="UrbanUproar_Logo.png" alt="logo" width="200px" height="200px"> <span style="position: absolute; left: 350px;"> Urban Uproar </span>
+        <nav>
+        <div class="nav_links">
+            <ul>
+                <li #> <a href="newsletter.php"> Home </a></li>
+                <li> <a href="blogs.html"> Blogs </a></li>
+                <li> <a href="aboutus1.html"> About Us </a></li>
+
+            </ul>
+        </div>
+        </nav>
+    </header>
+        <div class="blog3">
+            <img id="pic" src="blog3.jpg" alt="png" width="450px" height="220px">
+            <h1 id="heading">From Gaza to Kashmir: Can<br> international law come to the rescue?</h1>
+            <p id="para1"><b><i>Are we looking in the right direction when calling for a consensus at the UN or other like-minded organisations?</i></b></p>
+            <h3 id="name"><b>Hassan Mandivalla</b></h3>
+            <div id="red"></div>
+            <div id="green"></div>
+            <p id="paragraph"><b>The future of international law is somewhat daunting, and while every country, government or regime is entitled to tell its own story, it appears that international law is perhaps in search of the requisite local support required for effective enforcement, without which there are far-reaching consequences, ultimately resulting in the abridgement of in-country fundamental rights.</b><br>
+            <br>
+                I practice law in Pakistan, a country which has inherited a disputed border since the time of its post-colonial independence. The disputed territory of Kashmir itself embodies and encapsulates a humanitarian crisis, which has only intensified upon the revocation of its special status through an executive order of the government of India on August 6, 2019.<br>
+            <br>    
+                The aforementioned resulted in the displacement of people and their property rights, unwarranted violence, unlawful detention and derailment of infrastructure and communication, all of which are ingredients of an existential humanitarian crisis, as well as contributors to the breakdown of law and order. There is one common factor here, however, and that is the ability of international law to come to the rescue. That is exactly why the quote above resonates while we appreciate the desired outcome for the future of international law.</p>
+            <p id="date2"><b>November 27, 2023</b></p>
+            <p id="author2"><b>Hassan Mandivalla</b></p>
+            <div id="freeblock">
+                <p><b>1</b></p>
+            </div>
+            </div>
+
+</body>
+</html>

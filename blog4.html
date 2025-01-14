@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Blog4</title>
+    <style>
+        header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #242528;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #ffef00;
+    font-size: 20px;
+    height: 90px;
+}
+
+header li,a{
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    line-height: 90px;
+}
+
+.nav_links{
+list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a:hover{
+    color: #ffff00;
+}
+        .header{
+            width: 100%;
+            height: 245%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .logo{
+            position: absolute;
+            top: -38px;
+            left: -10px;
+        }
+        .nobullets li{
+            list-style-type: none;
+            display: inline;
+            padding: 20px 70px;
+        }
+        .nobullets{
+            position: absolute;
+            top: 43px;
+            left: 25%;
+        }
+        #urban{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffff00;
+}
+        .blog4{
+            width: 90%;
+            height: 200%;
+            position:absolute;
+            left: 63px;
+            top: 100px;
+            background-color: white;
+        }
+        #photo{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            border: solid 2px black;
+        }
+        #heading{
+            position: absolute;
+            top: 50px;
+            left: 43%;
+            width: 600px;
+        }
+        #para{
+            position: absolute;
+            top: 148px;
+            left: 43%;
+            width: 600px;
+            font-size: 24px;
+            border-bottom: solid 1px black;
+            color: rgb(56, 141, 211);
+        }
+        #author{
+            position: absolute;
+            top: 20px;
+            left: 43%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #explain{
+            position: absolute;
+            top: 440px;
+            left: 531px;
+            width: 566px;
+            text-align: justify;
+        }
+        #explain2{
+            position: absolute;
+            top: 440px;
+            left: 69%;
+            width: 538px;
+            text-align: justify;
+        }
+        #graph{
+            position: absolute;
+            top: 404px;
+            left: 2%;
+        }
+
+        #border{
+            position: absolute;
+            top: 400px;
+            width: 100%;
+            left: 27px;
+            background-color: white;
+            border-bottom: solid 2px black;
+        }
+        #graph2{
+            position: absolute;
+            top: 740px;
+            left: 1247px;
+        }
+        #dollar{
+            position: absolute;
+            top: 759px;
+            left: 3%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        #grp_para{
+            position: absolute;
+            top: 952px;
+            left: 3%;
+            font-size: 22px;
+            width: 1000px;
+            text-align: justify;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(7, 7, 92);
+        }
+        #dollar_desc{
+            position: absolute;
+            top: 811px;
+            left: 3%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 23px;
+            text-align: justify;
+            width: 500px;
+        }
+        #border2{
+            position: absolute;
+            bottom: 450px;
+            width: 100%;
+            left: 0px;
+            background-color: white;
+            border-bottom: solid 2px black;
+        }
+        #date{
+            position: absolute;
+            bottom: 400px;
+            right: 18px;
+        }
+        #auth{
+            position: absolute;
+            bottom: 400px;
+            left: 18px;
+        }
+        .footercontainer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    position: absolute;
+    bottom: -970px;
+    width: 100%;
+    height: 160px;
+    left: 0px;
+
+}
+.item1{
+    text-align: center;
+    color: #ffff00;
+    flex-shrink: 0;
+    align-self: flex-start;
+    font-family: 'Kalnia', serif;
+    font-size: 24px;
+    left: 30px;
+    position: absolute;
+    top: -2px;
+}
+.footerimage{
+
+    position: absolute;
+    top: 30px;
+    left: 50px;
+
+}
+.item3{
+    
+    font-size: 24px;
+    font-family: 'Oswald', 'Poppins', sans-serif;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+}
+.social_links{
+    position: absolute;
+    top: 70px;
+    padding: 3px;
+    right: 20px;
+
+}
+
+ul{
+    list-style: none;
+    color: #000000;
+}
+
+.footercontainer{
+    margin-top: 15px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.item1{
+    text-align: center;
+    color: #ffff00;
+    flex-shrink: 0;
+    align-self: flex-start;
+    font-family: 'Kalnia', serif;
+    font-size: 55px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item2{
+    font-size: 35px;
+    font-family: 'Oswald', 'Poppins', sans-serif; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 140px;
+}
+
+.item3{
+    font-size: 35px;
+    font-family: 'Oswald', 'Poppins', sans-serif; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+i{
+    font-size: 35px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footerimage{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    bottom: 90px;
+}
+
+footer a{
+    color:#ffff00;
+    text-decoration: none;
+    font-family: 'Oswald', 'Poppins', sans-serif;
+    font-size: 35px;
+    line-height: 0px;
+}
+
+footer a:hover{
+    color: white;
+}
+
+
+    </style>
+</head>
+<body link="green" alink="blue" vlink="yellow">
+    <header>
+        <img src="UrbanUproar_Logo.png" alt="logo" width="200px" height="200px"> <span style="position: absolute; left: 350px;"> Urban Uproar </span>
+        <nav>
+        <div class="nav_links">
+            <ul>
+                <li #> <a href="newsletter.php"> Home </a></li>
+                <li> <a href="blogs.html"> Blogs </a></li>
+                <li> <a href="aboutus1.html"> About Us </a></li>
+
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+        <div class="blog4">
+            <img id="photo" src="blog4.jpg" alt="png" width="550px" height="300px">
+
+            <h1 id="heading"><b>How Countries Should Respond to the Strong Dollar</b></h1>
+
+            <p id="para"><i>Policy responses to currency depreciation pressures should focus on the drivers of the exchange-rate moves and signs of market disruptions</i></p>
+
+            <h3 id="author"><b>Pierre-Olivier Gourinchas</b></h3>
+
+            <p id="explain"><b>The dollar is at its highest level since 2000, having appreciated 22 percent against the yen, 13 percent against the Euro and 6 percent against emerging market currencies since the start of this year. Such a sharp strengthening of the dollar in a matter of months has sizable macroeconomic implications for almost all countries, given the dominance of the dollar in international trade and finance.
+                <br> While the US share in world merchandise exports has declined from 12 percent to 8 percent since year 2000!
+            </b></p>
+
+            <p id="explain2"><b>The dollar share in world exports has held around 40 percent. For many countries fighting to bring down inflation, the weakening of their currencies relative to the dollar has made the fight harder. On average, the estimated pass-through of a 10 percent dollar appreciation into inflation is 1 percent. Such pressures are especially acute in emerging markets, reflecting their higher import dependency and greater share of dollar-invoiced imports compared with advanced economies.</b></p>
+
+            <img id="graph" src="frictions.jpeg" alt="graph" width="400px" height="250px">
+
+            <img id="graph2" src="graph2.jpg" alt="png" width="480px" height="600px">
+
+            <div id="border"></div>
+
+            <p id="date"><b>November 26, 2023</b></p>
+
+            <p id="auth"><b>Pierre-Olivier Gourinchas</b></p>
+
+            <p id="grp_para"><b>The dollar’s appreciation also is reverberating through balance sheets around the world. Approximately <u> of all cross-border loans </u>and international debt securities are denominated in US dollars. While emerging market governments have made progress in issuing debt in their own currency, their private corporate sectors have high levels of dollar-denominated debt. As world interest rates rise, financial conditions have tightened considerably for many countries. A stronger dollar only compounds these pressures, especially for some emerging market and many low-income countries that are already at a high risk of debt distress.
+                <br><br>
+                In these circumstances, should countries actively support their currencies? Several countries are resorting to foreign exchange interventions. Total foreign reserves held by emerging market and developing economies fell by more than 6 percent in the first seven months of this year.</b></p>
+            
+             <h2 id="dollar"><b>DOLLAR SURGE :</b></h2>   
+             <h4 id="dollar_desc"><b>For many countries, the weakening of their currencies relative to the US dollar has made the inflation fight harder.</b></h4>
+
+
+
+            <div id="border2"></div>
+        </div>
+
+</body>
+</html>
